@@ -1,5 +1,6 @@
 {
   "name": "employeedirectory",
+  "homepage": "https://myusername.github.io/employee-directory",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
