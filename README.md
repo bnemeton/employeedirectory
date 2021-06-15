@@ -12,4 +12,4 @@ To run your own local copy of this page, clone this repository, then install dep
 
 ## Deployed
 
-You can view a deployed version of this app here: [LINK]
+You can view a deployed version of this app here: https://bnemeton.github.io/employeedirectory/
