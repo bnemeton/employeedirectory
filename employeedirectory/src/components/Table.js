@@ -1,11 +1,5 @@
-import React, {useReducer} from 'react'
+import React from 'react'
 
-// function reducer(state, action) {
-//     switch(action.type) {
-//         case 'sort':
-
-//     }
-// }
 
 function Table(props) {
     return (
@@ -26,7 +20,7 @@ function Table(props) {
             const formattedDate = date.toLocaleDateString()
             return(
                 <tr>
-                    <td><img src={emp.picture.medium}></img></td>
+                    <td><img alt="an employee" src={emp.picture.medium}></img></td>
                     <td>{fullName}</td>
                     <td>{emp.phone}</td>
                     <td>{emp.email}</td>
