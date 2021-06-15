@@ -9,13 +9,13 @@ import React, {useReducer} from 'react'
 
 function Table(props) {
     return (
-        <table>
+        <table className="table is-bordered">
             <thead>
                 <tr>
                     <th scope="col">Image</th>
                     <th scope="col" onClick={props.handleSort} column="name" >Name</th>
-                    <th scope="col">Phone</th>
-                    <th scope="col">Email</th>
+                    <th scope="col" onClick={props.handleSort} column="phone" >Phone</th>
+                    <th scope="col" onClick={props.handleSort} column="email" >Email</th>
                     <th scope="col">DOB</th>
                 </tr>
             </thead>

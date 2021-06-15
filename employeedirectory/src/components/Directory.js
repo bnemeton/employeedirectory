@@ -49,9 +49,14 @@ class Directory extends Component {
         }
 
     handleSort = (e) => {
-        // const column = e.target.getAttribute("column")
+        const column = e.target.getAttribute("column")
         // console.log(column)
-        const sortedResults = this.state.results.sort((a, b) => a.name.first > b.name.first ? 1 : -1)
+        let sortedResults = [];
+        if (column==="name") {
+            sortedResults = this.state.results.sort((a, b) => a.name.last > b.name.last ? 1 : -1)
+        } else {
+            sortedResults = this.state.results.sort((a, b) => a[column] > b[column] ? 1 : -1)
+        }
         this.setState({
             ...this.state,
             results: sortedResults
@@ -60,7 +65,7 @@ class Directory extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container">
                 <Header />
                 <Search 
                 value={this.state.value}
